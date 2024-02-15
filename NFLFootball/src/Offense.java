@@ -1,8 +1,7 @@
 
 public abstract class Offense extends Player{
-	String positionType = "Offense";
 	
-	public Offense(String name, String playerId, String positionType) {
+	public Offense(String name, int playerId) {
 		super(name, playerId);
 	}
 	

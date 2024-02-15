@@ -3,10 +3,9 @@ public class DefensiveLineman extends Defense{
 	private String position = "Defensive Lineman";
 	private String play = "block";
 
-	public DefensiveLineman(String name, String playerId, String positionType,String position, String play) {
-		super(name, playerId, positionType);
-		this.position = position;
-		this.play = play;
+	public DefensiveLineman(String name, int playerId) {
+		super(name, playerId);
+
 	}
 
 	@Override
@@ -21,11 +20,10 @@ public class DefensiveLineman extends Defense{
 
 	@Override
 	public String toString() {
-		String result = "Name: "+name+
-						"\nNumber: "+playerId+
-						"\nPosition Type: "+positionType+
-						"\nPosition: "+position+
-						"\nPlay: "+play;
+		String result = "Name: "+getName()+
+				"\nNumber: "+getPlayerId()+
+				"\nPosition: "+getPlayerPosition()+
+				"\nPlay: "+play();
 		return result;
 	}
 

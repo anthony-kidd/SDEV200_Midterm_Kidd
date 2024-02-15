@@ -2,9 +2,9 @@
 public abstract class Player {
 	
 	String name;
-	String playerId;
+	int playerId;
 	
-	public Player(String name, String playerId) {
+	public Player(String name, int playerId) {
 	this.name = name;
 	this.playerId = playerId;
 	}
@@ -13,7 +13,7 @@ public abstract class Player {
 		return name;
 	};
 	
-	public String getPlayerId(){
+	public int getPlayerId(){
 		return playerId;
 	};
 	

@@ -3,10 +3,9 @@ public class Linebacker extends Defense{
 	private String position = "Linebacker";
 	private String play = "tackle";
 
-	public Linebacker(String name, String playerId, String positionType,String position, String play) {
-		super(name, playerId, positionType);
-		this.position = position;
-		this.play = play;	
+	public Linebacker(String name, int playerId) {
+		super(name, playerId);
+	
 		}
 
 	@Override
@@ -21,11 +20,10 @@ public class Linebacker extends Defense{
 
 	@Override
 	public String toString() {
-		String result = "Name: "+name+
-						"\nNumber: "+playerId+
-						"\nPosition Type: "+positionType+
-						"\nPosition: "+position+
-						"\nPlay: "+play;
+		String result = "Name: "+getName()+
+				"\nNumber: "+getPlayerId()+
+				"\nPosition: "+getPlayerPosition()+
+				"\nPlay: "+play();
 		return result;
 	}
 

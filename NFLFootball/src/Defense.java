@@ -2,7 +2,7 @@
 public abstract class Defense extends Player{
 	String positionType = "Defense";
 	
-	public Defense(String name,String playerId,String positionType) {
+	public Defense(String name,int playerId) {
 		super(name, playerId);
 	}
 

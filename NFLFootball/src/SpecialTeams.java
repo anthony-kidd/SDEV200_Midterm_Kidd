@@ -1,10 +1,8 @@
 
 public abstract class SpecialTeams extends Player{
-	String positionType = "Special Teams";
 
-	public SpecialTeams(String name, String playerId, String positionType) {
+	public SpecialTeams(String name, int playerId) {
 		super(name, playerId);
-		this.positionType = positionType;
 	}
 
 }

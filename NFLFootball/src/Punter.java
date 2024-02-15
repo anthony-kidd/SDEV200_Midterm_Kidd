@@ -3,10 +3,8 @@ public class Punter extends SpecialTeams{
 	private String position = "Punter";
 	private String play = "Punt";
 
-	public Punter(String name, String playerId, String positionType,String position, String play) {
-		super(name, playerId, positionType);
-		this.position = position;
-		this.play = play;
+	public Punter(String name, int playerId) {
+		super(name, playerId);
 		}
 
 	@Override
@@ -21,11 +19,10 @@ public class Punter extends SpecialTeams{
 
 	@Override
 	public String toString() {
-		String result = "Name: "+name+
-						"\nNumber: "+playerId+
-						"\nPosition Type: "+positionType+
-						"\nPosition: "+position+
-						"\nPlay: "+play;
+		String result = "Name: "+getName()+
+				"\nNumber: "+getPlayerId()+
+				"\nPosition: "+getPlayerPosition()+
+				"\nPlay: "+play();
 		return result;
 	}
 

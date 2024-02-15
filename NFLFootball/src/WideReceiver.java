@@ -3,10 +3,9 @@ public class WideReceiver extends Offense{
 	private String position = "Wide Receiver";
 	private String play = "catch";
 
-	public WideReceiver(String name, String playerId, String positionType,String position, String play) {
-		super(name, playerId, positionType);
-		this.position = position;
-		this.play = play;
+	public WideReceiver(String name, int playerId) {
+		super(name, playerId);
+	
 	}
 
 	@Override
@@ -21,11 +20,10 @@ public class WideReceiver extends Offense{
 
 	@Override
 	public String toString() {
-		String result = "Name: "+name+
-						"\nNumber: "+playerId+
-						"\nPosition Type: "+positionType+
-						"\nPosition: "+position+
-						"\nPlay: "+play;
+		String result = "Name: "+getName()+
+				"\nNumber: "+getPlayerId()+
+				"\nPosition: "+getPlayerPosition()+
+				"\nPlay: "+play();
 		return result;
 	}
 

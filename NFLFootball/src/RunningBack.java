@@ -3,10 +3,8 @@ public class RunningBack extends Offense{
 	private String position = "Running Back";
 	private String play = "rush or receive";
 
-	public RunningBack(String name, String playerId, String positionType,String position, String play) {
-		super(name, playerId, positionType);
-		this.position = position;
-		this.play = play;
+	public RunningBack(String name,int playerId) {
+		super(name, playerId);
 	}
 
 	@Override
@@ -21,11 +19,10 @@ public class RunningBack extends Offense{
 
 	@Override
 	public String toString() {
-		String result = "Name: "+name+
-						"\nNumber: "+playerId+
-						"\nPosition Type: "+positionType+
-						"\nPosition: "+position+
-						"\nPlay: "+play;
+		String result = "Name: "+getName()+
+				"\nNumber: "+getPlayerId()+
+				"\nPosition: "+getPlayerPosition()+
+				"\nPlay: "+play();
 		return result;
 	}
 
